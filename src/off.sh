@@ -37,13 +37,6 @@ echo "// Deamazonifier is reverting your devices settings"
 ./adb shell settings put global transition_animation_scale 1
 ./adb shell settings put global animator_duration_scale 1
 
-# remove google alts
-echo "// Deamazonifier is removing apps"
-echo "Removing Google Chrome (1/2)"
-./adb uninstall com.android.chrome
-echo "Removing Google Gallery (2/2)"
-./adb uninstall com.google.android.apps.photosgo
-
 # remove lawnchair
 echo "// Deamazonifier is reverting the launcher"
 ./adb shell pm enable com.amazon.firelauncher

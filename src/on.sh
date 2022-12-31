@@ -39,13 +39,6 @@ echo "// Deamazonifier is changing your devices settings"
 ./adb shell settings put global transition_animation_scale 0.50
 ./adb shell settings put global animator_duration_scale 0.50
 
-# replace amazon apps with google alternatives
-echo "// Deamazonifier is installing Google Alternatives to deleted apps"
-echo "Installing Google Chrome (1/2)"
-./adb install GoogleAlts/chrome.apk #chrome
-echo "Installing Google Gallery (2/2)"
-./adb install GoogleAlts/gallery.apk
-
 # install lawnchair
 echo "// Deamazonifier is replacing the launcher"
 echo "Installing Lawnchair (1/1)"
