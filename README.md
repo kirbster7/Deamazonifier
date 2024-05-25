@@ -8,6 +8,8 @@ Then, enable developer options and USB debugging, and plug your tablet into your
 After that, run the `on.sh` script.
 Just wait for it to get done, and enjoy your bloat-free tablet!
 
+Note: the adb binary included with this is for Darwin kernel. If you are using the Linux kernel, replace the included adb binary with one compiled for the Linux kernel.
+
 ## Removing
 Just run the `off.sh` script.
 
