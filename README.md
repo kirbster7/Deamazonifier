@@ -2,21 +2,23 @@
 # Deamazonifier NT Branch
 A basic program built for Windows that fixes (almost) everything wrong with Amazon Fire tablets
 
-## Installation (NOT FINAL)
+> :warning: **WARNING:** This is not guaranteed to work on your device. Join my discord server to get a list of supported devices.
+
+## Installation
 First, download the src folder from this directory.
 Then, enable developer options and USB debugging, and plug your tablet into your computer.
 After that, run
 ```batch
-.\de.bat /on
+.\de.bat
 ```
 Just wait for it to get done, and enjoy your bloat-free tablet!
 
-Note: the adb binary included with this is for Darwin kernel. If you are using the Linux kernel, replace the included adb binary with one compiled for the Linux kernel.
-
 ## Removing
+This isn't finished, factory reset your device to remove the modifications
+
 Just run 
 ```batch
-.\de.bat /off
+.\de.bat
 ```
 
 ## Compatability
