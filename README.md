@@ -1,8 +1,8 @@
 ![Icon](Deamazonify_Icn_Small.png)
-# Deamazonifier
-A basic program built for Mac that fixes (almost) everything wrong with Amazon Fire tablets
+# DeamazonifierNT
+A basic program built for Windows that fixes (almost) everything wrong with Amazon Fire tablets
 
-## Installation
+## Installation (NOT FINAL)
 First, download the src folder from this directory.
 Then, enable developer options and USB debugging, and plug your tablet into your computer.
 After that, run the `on.sh` script.
