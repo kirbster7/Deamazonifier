@@ -17,8 +17,8 @@ echo [::::::::--------] Installing Google Play Framework
 .\support\platform-win\adb.exe install support/Gapps/fw.apk >nul
 echo [::::::::::::----] Installing Google Play Service 
 .\support\platform-win\adb.exe install support/Gapps/ps.apk >nul
-echo [::::::::::::::::] Installing Aurora Store 
-.\support\platform-win\adb.exe install support/Gapps/aurora.apk >nul
+echo [::::::::::::::::] Installing Play Store 
+.\support\platform-win\adb.exe install support/Gapps/store.apk >nul
 
 echo Deamazonifier is disabling Amazon apps
 for /f %%i in (support\amazonlist.txt) do (
@@ -51,10 +51,19 @@ echo [:::::::::::-----] Focusing Lawnchair
 echo [::::::::::::::::] Disabling stock launcher
 .\support\platform-win\adb.exe shell pm disable-user --user 0 com.amazon.firelauncher >nul
 
+echo Deamazonifier is installing extra apps
+echo [:::::-----------] Installing Via Browser
+.\support\platform-win\adb.exe install support/extra/via.apk >nul
+echo [::::::::::------] Installing Droid-ify
+.\support\platform-win\adb.exe install support/extra/droid-ify.apk >nul
+echo [::::::::::::::::] Installing Aurora Store
+.\support\platform-win\adb.exe install support/Gapps/aurora.apk >nul
+
 echo Please Press 'Allow' to the popup
 echo Rebooting your device in 15 seconds
 timeout /t 15
 .\support\platform-win\adb.exe reboot
 cls
 echo Deamazonifier is finished
+echo Refer to https://github.com/notkirb/Deamazonifier/blob/windows/post-install.md for instructions on what to do after installation.
 echo Thank you
