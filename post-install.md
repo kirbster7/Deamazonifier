@@ -1,8 +1,10 @@
 # Deamazonifier Customization Guide
 
-
 After the script is complete, your device will restart. 
 You should unplug your device from your PC during this time.
+
+![Untitled](https://github.com/notkirb/Deamazonifier/assets/90074338/36853a40-6066-42a9-bba8-04872c118ad1)
+Scan this with your tablet
 
 ## Apps
 You will see 5 new apps in the app drawer.
